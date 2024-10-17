@@ -15,34 +15,54 @@
 
   
     <style>
-    /* General Styles */
+    /* General CSS Styles */
     body {
         font-family: Arial, sans-serif;
         margin: 0;
-        padding: 20px;
+        padding: 10px;
         background-color: white;
     }
 
     .gallery {
         display: grid;
         grid-template-columns: repeat(4, 1fr); /* 4 columns */
-        gap: 20px;
+        gap: 10px;
         max-width: 100%; /* Ensures the grid doesn't overflow the screen */
     }
 
     /* Header, Footer, and Product cells styling */
-    .header, .footer, .product {
+    .header, .product {
         background-color: white;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        padding: 10px;
         font-size: 1.5em;
         color: #333;
         height: auto;
         width: 100%;
         box-sizing: border-box; /* Ensure padding and borders are included in the width calculation */
+    }
+
+    .footer {
+        background-color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        font-size: 1em;
+        color: #333;
+        height: auto;
+        width: 100%;
+        box-sizing: border-box; /* Ensure padding and borders are included in the width calculation */
+    }
+
+    .footer p {
+        margin: 0;
+        padding: 1px 0;
     }
 
     /* Product image styling */
@@ -85,8 +105,8 @@
 
         <!-- Product 1 -->
         <div class="product">
-            <a href="https://www.akg.com/headphones/professional-headphones/K371-.html" target="_blank">
-                <img src="akg371.png" alt="Product 1">
+            <a href="https://www.bhphotovideo.com/c/product/1491631-REG/akg_k371_over_ear_oval_closed_back.html" target="_blank">
+                <img src="akgk371.png" alt="Product 1">
             </a>
         </div>
 
@@ -99,8 +119,8 @@
 
         <!-- Product 3 -->
         <div class="product">
-            <a href="https://shop.flipperzero.one/?_gl=1*10eqsmk*_ga*NDQyNTYzMzQ2LjE3MjkxMzAwMTc.*_ga_GM78S6JK0K*MTcyOTEzMjYxNS4yLjAuMTcyOTEzMjYxNS42MC4wLjA." target="_blank">
-                <img src="flipper0.png" alt="Product 3">
+            <a href="https://www.hydroflask.com/32-oz-wide-mouth-with-flex-straw-cap?color=White" target="_blank">
+                <img src="hydroflask.png" alt="Product 3">
             </a>
         </div>
 
@@ -120,8 +140,8 @@
 
         <!-- Product 6 -->
         <div class="product">
-            <a href="https://hhkeyboard.us/hhkb/pro-classic" target="_blank">
-                <img src="hhkb.png" alt="Product 6">
+            <a href="https://billingham.com/products/hadley-pro-camera-bag_colour-black-fibrenyte-black-leather" target="_blank">
+                <img src="billingham.png" alt="Product 6">
             </a>
         </div>
 
@@ -141,8 +161,8 @@
 
         <!-- Product 9 -->
         <div class="product">
-            <a href="https://bombas.com/products/mens-merino-wool-sock-4-pack?variant=navy-teal-mix&size=l" target="_blank">
-                <img src="merinobombas.png" alt="Product 9">
+            <a href="https://www.bhphotovideo.com/c/product/1458213-REG/audio_technica_consumer_at_lp60x_bw_fully_automatic_belt_drive.html" target="_blank">
+                <img src="lp60x.png" alt="Product 9">
             </a>
         </div>
 
@@ -155,7 +175,8 @@
 
         <!-- Footer cell -->
         <div class="footer">
-            arti
+            <p>Recommendation engine.</p>
+            <p>Powered entirely by my friends and I asking each other where we got cool stuff.</p>
         </div>
     </div>
 
