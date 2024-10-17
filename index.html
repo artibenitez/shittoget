@@ -53,15 +53,18 @@
         .product {
             background-color: white; /* White background, no visible borders */
             transition: transform 0.3s;
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
         }
 
         .product img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 0;
+            width: 150px; /* Set fixed width */
+            height: 150px; /* Set fixed height */
+            object-fit: cover; /* Maintain aspect ratio while covering the square */
+            border-radius: 0; /* Remove rounding */
         }
-
+        
     </style>
 </head>
 <body>
