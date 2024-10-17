@@ -28,45 +28,26 @@
             gap: 20px; /* Spacing between cells */
         }
 
-        /* First cell for title */
-        .header {
-            grid-column: 1; /* First cell */
-            background-color: white;
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-            font-size: 1.5em;
-            color: #333;
-        }
-
-        /* Last cell for footer with name */
-        .footer {
-            grid-column: 4; /* Last cell */
-            grid-row: 3; /* Bottom right */
-            background-color: white;
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-            font-size: 1em;
-            color: #666;
-        }
-
-        /* Product grid item styling */
-        .product {
+        .header, .footer, .product {
             background-color: white; /* White background, no visible borders */
-            transition: transform 0.3s;
+            text-align: center;
             display: flex; /* Use flexbox for centering */
             justify-content: center; /* Center horizontally */
             align-items: center; /* Center vertically */
+            padding: 20px;
+            font-size: 1.5em; /* Same font size */
+            color: #333; /* Same color */
+            height: 400px; /* Same height as images */
+            width: 400px; /* Same width as images */
         }
-
+        .header, .footer {
+        border-radius: 0; /* Remove extra rounding */
+        }   
         .product img {
-            width: 400px; /* Set fixed width (increase size) */
-            height: 400px; /* Set fixed height (increase size) */
-            object-fit: contain; /* Maintain aspect ratio without cropping */
-            border-radius: 0; /* Remove rounding */
+            width: 100%; /* Scale images to fit container */
+            height: 100%;
+            object-fit: contain; /* Keep image aspect ratio without cropping */
         }
-
 
     </style>
 </head>
