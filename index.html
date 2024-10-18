@@ -19,26 +19,37 @@
     body {
         font-family: Arial, sans-serif;
         margin: 0;
-        padding: 10px;
+        padding: 20px;
         background-color: white;
     }
 
     .gallery {
         display: grid;
         grid-template-columns: repeat(4, 1fr); /* 4 columns */
-        gap: 10px;
+        gap: 20px;
         max-width: 100%; /* Ensures the grid doesn't overflow the screen */
     }
 
     /* Header, Footer, and Product cells styling */
-    .header, .product {
+    .header {
+        background-color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: clamp(16px, 2vw, 24px); /* Font size scales with viewport but has a min of 16px and max of 24px */
+        color: #333;
+        height: auto;
+        width: 100%;
+        box-sizing: border-box; /* Ensure padding and borders are included in the width calculation */
+    }
+
+    .product {
         background-color: white;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
-        font-size: 1.5em;
+        padding: 20px;
+        font-size: clamp(16px, 2vw, 24px); /* Font size scales with viewport but has a min of 16px and max of 24px */
         color: #333;
         height: auto;
         width: 100%;
@@ -52,8 +63,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 10px;
-        font-size: 1em;
+        padding: 20px;
+        font-size: clamp(16px, 2vw, 24px); /* Font size scales with viewport but has a min of 16px and max of 24px */
         color: #333;
         height: auto;
         width: 100%;
@@ -81,9 +92,9 @@
             gap: 10px; /* Reduce the gap for smaller screens */
         }
 
-        /* Ensure header, footer, and product text scale down slightly */
+        /* Ensure header, footer, and product text scale down proportionally */
         .header, .footer, .product {
-            font-size: 1.2em;
+            font-size: clamp(12px, 4vw, 18px); /* Larger scaling factor for smaller screens, min 12px, max 18px */
             padding: 10px;
         }
 
@@ -92,7 +103,7 @@
             max-height: 100px;
         }
     }
-
+    
     </style>
 </head>
 <body>
