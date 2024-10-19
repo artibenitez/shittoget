@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arab, sans-serif;
     margin: 0;
     padding: 20px;
     background-color: white;
@@ -20,7 +20,7 @@ body {
     align-items: center;
     padding: 20px;
     font-size: clamp(16px, 2vw, 24px); /* Font size scales with viewport but has a min of 16px and max of 24px */
-    color: #333;
+    color: #000000;
     height: auto;
     width: 100%;
     box-sizing: border-box; /* Ensure padding and borders are included in the width calculation */
@@ -34,7 +34,7 @@ body {
     align-items: center;
     padding: 20px;
     font-size: clamp(16px, 2vw, 24px); /* Font size scales with viewport but has a min of 16px and max of 24px */
-    color: #333;
+    color: #000000;
     height: auto;
     width: 100%;
     box-sizing: border-box; /* Ensure padding and borders are included in the width calculation */
@@ -49,7 +49,7 @@ body {
     align-items: center;
     padding: 20px;
     font-size: clamp(10px, 1vw, 18x); /* Font size scales with viewport but has a min of 12px and max of 20px */
-    color: #333;
+    color: #000000;
     height: auto;
     width: 100%;
     box-sizing: border-box; /* Ensure padding and borders are included in the width calculation */
