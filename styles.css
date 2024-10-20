@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 20px;
     background-color: white;
+    text-decoration: none;
 }
 
 .gallery {
@@ -10,6 +11,7 @@ body {
     grid-template-columns: repeat(4, 1fr); /* 4 columns */
     gap: 20px;
     max-width: 100%; /* Ensures the grid doesn't overflow the screen */
+    text-decoration: none;
 }
 
 .header {
@@ -20,10 +22,11 @@ body {
     align-items: center;
     padding: 20px;
     font-size: clamp(16px, 2vw, 24px); /* Font size scales with viewport but has a min of 16px and max of 24px */
-    color: #000000;
     height: auto;
     width: 100%;
     box-sizing: border-box; /* Ensure padding and borders are included in the width calculation */
+    color: black; /* Set the color to match the unvisited state */
+    text-decoration: none;
 }
 
 .product {
@@ -34,10 +37,11 @@ body {
     align-items: center;
     padding: 20px;
     font-size: clamp(16px, 2vw, 24px); /* Font size scales with viewport but has a min of 16px and max of 24px */
-    color: #000000;
     height: auto;
     width: 100%;
     box-sizing: border-box; /* Ensure padding and borders are included in the width calculation */
+    color: black; /* Set the color to match the unvisited state */
+    text-decoration: none;
 }
 
 .footer {
@@ -49,15 +53,24 @@ body {
     align-items: center;
     padding: 20px;
     font-size: clamp(10px, 1vw, 18x); /* Font size scales with viewport but has a min of 12px and max of 20px */
-    color: #000000;
     height: auto;
     width: 100%;
     box-sizing: border-box; /* Ensure padding and borders are included in the width calculation */
+    color: black; /* Set the color to match the unvisited state */
+    text-decoration: none;
+
 }
 
-.footer p {
+.footer a {
     margin: 0;
     padding: 1px 0;
+    color: black; /* Set the color to match the unvisited state */
+    text-decoration: none;
+}
+
+.footer a:visited {
+    color: black; /* Set the color to match the unvisited state */
+    text-decoration: none;
 }
 
 .product img {
