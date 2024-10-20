@@ -62,15 +62,17 @@ body {
 }
 
 .footer a {
-    margin: 0;
-    padding: 1px 0;
-    color: black; /* Set the color to match the unvisited state */
-    text-decoration: none;
+    text-decoration: none; /* Remove underline from all links inside the footer */
+    color: black; /* Ensure the link is black */
 }
 
 .footer a:visited {
-    color: black; /* Set the color to match the unvisited state */
-    text-decoration: none;
+    color: black; /* Set color for visited links */
+    text-decoration: none; /* Ensure visited links are not underlined */
+}
+
+.footer a:hover {
+    text-decoration: none; /* Prevent underline on hover */
 }
 
 .product img {
